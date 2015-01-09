@@ -1,4 +1,4 @@
-package src.com.probad.bee.gui;
+package com.probad.bee.gui;
 
 //********************************************************\\
 //* Name: Bitmap                                         *\\
@@ -9,7 +9,7 @@ package src.com.probad.bee.gui;
 //********************************************************\\
 
 
-import src.com.probad.bee.*;
+import com.probad.bee.*;
 
 public class Bitmap {
  

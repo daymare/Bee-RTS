@@ -1,6 +1,6 @@
-package src.com.probad.bee.entity;
+package com.probad.bee.entity;
 
-import src.com.probad.bee.world.EntityWorld;
+import com.probad.bee.world.EntityWorld;
 
 public class DefenseHive extends BasicHive {
 	

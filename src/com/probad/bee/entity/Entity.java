@@ -37,14 +37,14 @@
  * 
  */
 
-package src.com.probad.bee.entity;
+package com.probad.bee.entity;
 
 import java.util.*;
 
 import org.lwjgl.util.vector.Vector3f;
 
-import src.com.probad.bee.world.EntityWorld;
-import src.com.probad.bee.gui.*;
+import com.probad.bee.world.EntityWorld;
+import com.probad.bee.gui.*;
 
 
 public abstract class Entity {

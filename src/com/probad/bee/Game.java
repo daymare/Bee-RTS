@@ -5,12 +5,12 @@
 //*                      Is run repeatedly on a thread.  *\\
 //********************************************************\\
 
-package src.com.probad.bee;
+package com.probad.bee;
 
-import src.com.probad.bee.world.*;
-import src.com.probad.bee.gui.*;
+import com.probad.bee.world.*;
+import com.probad.bee.gui.*;
 
-import src.com.probad.bee.entity.*;
+import com.probad.bee.entity.*;
 
 import java.util.Random;
 

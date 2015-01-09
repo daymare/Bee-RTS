@@ -1,8 +1,8 @@
-package src.com.probad.bee;
+package com.probad.bee;
 
 import java.awt.event.*;
 
-import src.com.probad.bee.*;
+import com.probad.bee.*;
 
 public class InputHandler implements KeyListener, FocusListener, MouseListener, MouseMotionListener {
 	

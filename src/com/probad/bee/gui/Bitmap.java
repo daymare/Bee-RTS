@@ -9,7 +9,7 @@ package com.probad.bee.gui;
 //********************************************************\\
 
 
-import com.probad.bee.*;
+
 
 public class Bitmap {
  

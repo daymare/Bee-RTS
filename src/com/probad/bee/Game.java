@@ -10,13 +10,11 @@ package com.probad.bee;
 import com.probad.bee.world.*;
 import com.probad.bee.gui.*;
 
-import com.probad.bee.entity.*;
-
 import java.util.Random;
 
 public class Game {
 	
-	EntityWorld world;
+	protected EntityWorld world;
 	
 	public int time;
 	public double cam_x = 0;
@@ -36,4 +34,8 @@ public class Game {
 		time++;
 		//System.out.println(time);
    }
+	
+	public EntityWorld getWorld() {
+		return world;
+	}
 }

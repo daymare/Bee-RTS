@@ -1,7 +1,6 @@
 package com.probad.bee.entity;
 
 import com.probad.bee.world.EntityWorld;
-import com.probad.bee.gui.*;
 
 public abstract class HealthEntity extends Entity {
 	protected double health;

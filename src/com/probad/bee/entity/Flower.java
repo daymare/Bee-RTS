@@ -17,6 +17,7 @@ public class Flower extends HealthEntity {
 		entityType = EntityType.ResourceEntity;
 	}
 	
+	@Override
 	public void render(Screen s, double camX, double camY) {
 		if(resources>0) {
 			s.draw(image, (int)(x-camX), (int)(y-camY));
@@ -37,6 +38,7 @@ public class Flower extends HealthEntity {
 	}
 	
 	
+	@Override
 	public double getMaxHealth() {
 		return 250.0f;
 	}

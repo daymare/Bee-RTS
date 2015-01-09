@@ -2,8 +2,6 @@ package com.probad.bee;
 
 import java.awt.event.*;
 
-import com.probad.bee.*;
-
 public class InputHandler implements KeyListener, FocusListener, MouseListener, MouseMotionListener {
 	
 	public double xspeed = 0;
@@ -15,40 +13,50 @@ public class InputHandler implements KeyListener, FocusListener, MouseListener, 
 	
 	public boolean[] keys = new boolean[65536];
 
+	@Override
 	public void mouseDragged(MouseEvent arg0) {
 	
 	}
 
+	@Override
 	public void mouseMoved(MouseEvent e) {
 		mouse_x = e.getX()/BeeComponent.SCALE;
 		mouse_y = e.getY()/BeeComponent.SCALE;
 		System.out.println("X: " + mouse_x + ", Y: " + mouse_y);
 	}
 
+	@Override
 	public void mouseClicked(MouseEvent arg0) {
 	}
 
+	@Override
 	public void mouseEntered(MouseEvent arg0) {
 	}
 
+	@Override
 	public void mouseExited(MouseEvent arg0) {
 	}
 
+	@Override
 	public void mousePressed(MouseEvent arg0) {
 	}
 
+	@Override
 	public void mouseReleased(MouseEvent arg0) {
 	}
 
+	@Override
 	public void focusGained(FocusEvent arg0) {
 	}
 
+	@Override
 	public void focusLost(FocusEvent arg0) {
 		for (int i=0; i<keys.length; i++) {
 			keys[i] = false;
 		}
 	}
 
+	@Override
 	public void keyPressed(KeyEvent e) { 
 		int code = e.getKeyCode();
 		System.out.println(code);
@@ -57,6 +65,7 @@ public class InputHandler implements KeyListener, FocusListener, MouseListener, 
 		}
 	}
 
+	@Override
 	public void keyReleased(KeyEvent e) {
 		int code = e.getKeyCode(); 
 		if (code>0 && code<keys.length) {
@@ -64,6 +73,7 @@ public class InputHandler implements KeyListener, FocusListener, MouseListener, 
 		}
 	}
 
+	@Override
 	public void keyTyped(KeyEvent arg0) {
 	}
 	

@@ -1,7 +1,5 @@
 package com.probad.bee.gui;
 
-import com.probad.bee.*;
-
 public class Tilemapper extends Bitmap {
 	
 	public int width;

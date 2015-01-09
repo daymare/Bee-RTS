@@ -3,7 +3,6 @@ package com.probad.bee.entity;
 import com.probad.bee.world.EntityWorld;
 import com.probad.bee.gui.*;
 
-import java.math.*;
 import java.util.Random;
 
 import org.lwjgl.util.vector.*;
@@ -61,6 +60,7 @@ public abstract class Unit extends HealthEntity {
 		return super.update(deltaMS);
 	}
 
+	@Override
 	public abstract void render(Screen s, double camX, double camY);
 
 	// accelerate to target

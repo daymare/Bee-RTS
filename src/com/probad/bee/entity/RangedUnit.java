@@ -20,6 +20,7 @@ public abstract class RangedUnit extends Unit {
 		return super.update(deltaMS);
 	}
 	
+	@Override
 	public abstract void render(Screen s, double camX, double camY);
 	
 	@Override

@@ -10,7 +10,7 @@ import java.awt.image.DataBufferInt;
 import javax.swing.JFrame;
 
 import com.probad.bee.Game;
-import com.probad.bee.BeeComponent;
+import com.probad.bee.InputHandler;
 import com.probad.bee.gui.Screen;
 
 public class BeeComponent extends Canvas implements Runnable {
@@ -69,6 +69,7 @@ public class BeeComponent extends Canvas implements Runnable {
 	    }
 	}
 	
+	@Override
 	public void run() {
 		while(running) {
 			update();
@@ -88,7 +89,7 @@ public class BeeComponent extends Canvas implements Runnable {
 	      }
 	      
 	      screen.render(game);
-	      game.world.render(game.cam_x, game.cam_y);
+	      game.getWorld().render(game.cam_x, game.cam_y);
 	      
 	      for (int i = 0; i < WIDTH * HEIGHT; i++) {
 	    	  pixels[i] = screen.pixels[i];

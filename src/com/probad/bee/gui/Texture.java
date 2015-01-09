@@ -4,8 +4,6 @@ import java.awt.image.BufferedImage;
 
 import javax.imageio.ImageIO;
 
-import com.probad.bee.gui.*;
-
 public class Texture {
 	public static Bitmap[] tiles = loadTiles(22);
 	

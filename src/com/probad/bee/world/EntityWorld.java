@@ -1,9 +1,9 @@
-package com.probad.bee.world;
+package src.com.probad.bee.world;
 
 import java.util.*;
 
-import com.probad.bee.entity.*;
-import com.probad.bee.gui.*;
+import src.com.probad.bee.entity.*;
+import src.com.probad.bee.gui.*;
 
 
 public class EntityWorld {

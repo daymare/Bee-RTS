@@ -1,10 +1,10 @@
-package com.probad.bee.gui;
+package src.com.probad.bee.gui;
 
 import java.awt.image.BufferedImage;
 
 import javax.imageio.ImageIO;
 
-import com.probad.bee.gui.*;
+import src.com.probad.bee.gui.*;
 
 public class Texture {
 	public static Bitmap[] tiles = loadTiles(22);

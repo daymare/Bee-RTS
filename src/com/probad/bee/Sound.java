@@ -1,4 +1,4 @@
-package com.probad.bee;
+package src.com.probad.bee;
 
 import javax.sound.sampled.*;
 

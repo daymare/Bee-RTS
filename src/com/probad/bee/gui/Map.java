@@ -1,4 +1,4 @@
-package com.probad.bee.gui;
+package src.com.probad.bee.gui;
 
 public class Map {
 	

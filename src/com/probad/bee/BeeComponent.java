@@ -1,4 +1,4 @@
-package com.probad.bee;
+package src.com.probad.bee;
 
 import java.awt.Canvas;
 import java.awt.Dimension;
@@ -9,9 +9,9 @@ import java.awt.image.DataBufferInt;
 
 import javax.swing.JFrame;
 
-import com.probad.bee.Game;
-import com.probad.bee.BeeComponent;
-import com.probad.bee.gui.Screen;
+import src.com.probad.bee.Game;
+import src.com.probad.bee.BeeComponent;
+import src.com.probad.bee.gui.Screen;
 
 public class BeeComponent extends Canvas implements Runnable {
 	private static final long serialVersionUID = 1L;

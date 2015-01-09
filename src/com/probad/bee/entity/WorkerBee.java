@@ -1,7 +1,7 @@
-package com.probad.bee.entity;
+package src.com.probad.bee.entity;
 
-import com.probad.bee.gui.*;
-import com.probad.bee.world.EntityWorld;
+import src.com.probad.bee.gui.*;
+import src.com.probad.bee.world.EntityWorld;
 
 public class WorkerBee extends Unit {
 	int targget = 0;

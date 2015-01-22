@@ -24,8 +24,9 @@ public class EntityWorld {
 	public EntityWorld(Screen s) {
 		screen = s;
 		Random random = new Random();
-		resource1 = 0;
+		resource1 = 1000;
 		
+		// TODO remove test code
 		for(int i = 0; i<20; i++) {
 			addEntity(new WorkerBee(random.nextInt(100), random.nextInt(100), 0, 0, this));
 		}
@@ -33,10 +34,11 @@ public class EntityWorld {
 			addEntity(new Flower(random.nextInt(500), random.nextInt(300), 0, this, 20));
 		}
 		
+		addEntity(new BasicHive(250, 250, 0, 0, this));
+		// end test code
 	}
     
     public void update(int deltaMS) {
-    	
     	
     	time += deltaMS;
     	
@@ -102,7 +104,7 @@ public class EntityWorld {
     
     public double[] getPathing(Entity ent, Entity target) {
     	double[] out = new double[2];
-    	// ???
+    	// TODO fix pathing
     	
     	// TEMPORARY
     	out[0] = target.getX();

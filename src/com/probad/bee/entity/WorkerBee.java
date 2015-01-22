@@ -28,7 +28,7 @@ public class WorkerBee extends Unit {
 	@Override
 	public boolean update(int deltaMS) {
 		
-		// TEST COMMANDS
+		// TODO remove test code
 		
 		if(isAtTarget()) {
 			switch(targget) {
@@ -59,7 +59,7 @@ public class WorkerBee extends Unit {
 		}
 		
 		
-		// END
+		// end test code
 		
 		
 		
@@ -79,7 +79,7 @@ public class WorkerBee extends Unit {
 	@Override
 	public void onCollide(Entity entity) {
 		super.onCollide(entity);
-		if(entity.team!=team && (allTarget || entity == target)) {
+		if(entity.team!=team && (allTarget || entity == target) && entity.team != -1) {
 			setRemoved();
 		}
 	}

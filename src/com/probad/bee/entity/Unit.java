@@ -94,7 +94,7 @@ public abstract class Unit extends HealthEntity {
 		if(entity.isFixedPosition()) {
 			resolveCollisionWithFixedEntity(entity);
 		}
-		if(entity.team == team) {
+		if(entity.team == team || entity.team == -1) {
 			
 			// TESTING
 			collisionForceMultiplier = 0.001;

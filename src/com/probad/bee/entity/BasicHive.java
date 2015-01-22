@@ -11,6 +11,8 @@ public class BasicHive extends HealthEntity {
 	
 	public static final int WorkerBeeCost = 50;
 	
+	protected int time = 0;
+	
 	
 	public BasicHive(double x, double y, double z, int team, EntityWorld world) {
 		super(x, y, z, team, world);
@@ -25,7 +27,16 @@ public class BasicHive extends HealthEntity {
 	
 	@Override
 	public boolean update(int deltaMS) {
-		System.out.println(health);
+		// TODO remove test code
+		time+=deltaMS;
+		
+		if(time > 10000) {
+			buyUpgrade(0);
+			System.out.println("Hive Upgraded");
+		}
+		
+		// end test code
+		
 		return super.update(deltaMS);
 	}
 	
@@ -72,7 +83,7 @@ public class BasicHive extends HealthEntity {
 		if(upgradeCost != -1 && upgradeCost<world.getResources()) {
 			switch(selectedUpgrade) {
 			case 0:
-				// TODO spawn defense hive
+				world.addEntity(new DefenseHive(x, y, z, team, world));
 				break;
 			case 1:
 				// TODO spawn production hive
